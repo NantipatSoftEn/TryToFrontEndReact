@@ -1,15 +1,13 @@
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
-import React, { PureComponent, Fragment } from 'react';
+import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
+import React, {PureComponent, Fragment} from 'react';
 
-import {
+import {} from 'reactstrap';
+import   '../../assets/styles.css';
+import {} from '../../components';
 
-} from 'reactstrap';
-
-import { } from '../../components';
-
-import ReduxSweetAlert, { swal } from 'react-redux-sweetalert';
-
+import ReduxSweetAlert, {swal} from 'react-redux-sweetalert';
+import Narbar from '../Navbar';
 class Home extends PureComponent {
 
     constructor(props) {
@@ -19,25 +17,21 @@ class Home extends PureComponent {
     render() {
         return (
             <Fragment>
-            test
-                <ReduxSweetAlert />
+                <Narbar/>
+                <ReduxSweetAlert/>
             </Fragment >
         )
     }
 }
 
 const mapStateToProps = (state) => {
-    return {
-
-    }
+    return {}
 }
 
 const mapDispatchToProps = (dispatch) => {
-    return bindActionCreators(
-        {
-            swal
-        }, dispatch
-    )
+    return bindActionCreators({
+        swal
+    }, dispatch)
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home)

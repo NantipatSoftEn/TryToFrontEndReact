@@ -11,7 +11,8 @@ import {
 } from 'react-router-dom';
 
 import {
-	Home
+	Home,
+	Main
 } from './views';
 
 import {
@@ -30,7 +31,7 @@ const App = () => (
 				<Switch>
 					<div>
 						<Route exact path="/" component={Home} />
-						<Route exact path="/" component={Home} />
+						<Route exact path="/about" component={Main} />
 					</div>
 				</Switch>
 			</ConnectedRouter>

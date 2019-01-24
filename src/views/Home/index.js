@@ -4,10 +4,10 @@ import React, {PureComponent, Fragment} from 'react';
 
 import {} from 'reactstrap';
 import   '../../assets/styles.css';
-import {} from '../../components';
+import {NavHeader} from '../../components';
 
 import ReduxSweetAlert, {swal} from 'react-redux-sweetalert';
-import Narbar from '../Navbar';
+
 class Home extends PureComponent {
 
     constructor(props) {
@@ -17,7 +17,7 @@ class Home extends PureComponent {
     render() {
         return (
             <Fragment>
-                <Narbar/>
+                <NavHeader/>
                 <ReduxSweetAlert/>
             </Fragment >
         )

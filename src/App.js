@@ -30,6 +30,7 @@ const App = () => (
 				<Switch>
 					<div>
 						<Route exact path="/" component={Home} />
+						<Route exact path="/" component={Home} />
 					</div>
 				</Switch>
 			</ConnectedRouter>

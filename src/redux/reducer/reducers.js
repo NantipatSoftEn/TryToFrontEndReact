@@ -5,12 +5,14 @@ import { routerReducer } from 'react-router-redux';
 
 import {
     Lang,
-    Notification
+    Notification,
+    Todos
 } from '../actions';
 
 export const reducers = {
     Lang,
-    Notification
+    Notification,
+    Todos,
 }
 
 export default combineReducers({

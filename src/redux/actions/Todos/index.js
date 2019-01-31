@@ -15,10 +15,30 @@ export const VisibilityFilters = {
     SHOW_ACTIVE: 'SHOW_ACTIVE'
 }
 
+export const  fucking ={
+    dog: 'putang ina'
+}
 
-const initialState  = []
+
+const initialState = []
 export default function (state = initialState, action) {
     switch (action.type) {
-        default: return state;
+        case 'ADD_TODO':
+            return [
+                ...state, {
+                    id: action.id,
+                    text: action.text,
+                    completed: false
+                }
+            ]
+        case 'TOGGLE_TODO':
+            return state.map(todo => todo.id === action.id
+                ? {
+                    ...todo,
+                    completed: !todo.completed
+                }
+                : todo)
+        default:
+            return state;
     }
 }

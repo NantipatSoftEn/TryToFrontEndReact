@@ -6,13 +6,15 @@ import { routerReducer } from 'react-router-redux';
 import {
     Lang,
     Notification,
-    Todos
+    Todos,
+    visibilityFilter
 } from '../actions';
 
 export const reducers = {
     Lang,
     Notification,
     Todos,
+    visibilityFilter
 }
 
 export default combineReducers({

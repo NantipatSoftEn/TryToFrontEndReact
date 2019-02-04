@@ -4,7 +4,7 @@ import React, {PureComponent, Fragment} from 'react';
 
 import {} from 'reactstrap';
 import '../../assets/styles.css';
-import {NavHeader,AddTodo,Footer} from '../../components';
+import {NavHeader} from '../../components';
 
 import ReduxSweetAlert, {swal} from 'react-redux-sweetalert';
 
@@ -18,7 +18,6 @@ class Home extends PureComponent {
         return (
             <Fragment>
                 <NavHeader/>
-                <Footer/>
                 <ReduxSweetAlert/>
             </Fragment >
         )

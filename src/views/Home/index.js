@@ -18,8 +18,6 @@ class Home extends PureComponent {
         return (
             <Fragment>
                 <NavHeader/>
-                <AddTodo/>
-                
                 <Footer/>
                 <ReduxSweetAlert/>
             </Fragment >

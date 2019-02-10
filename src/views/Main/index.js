@@ -18,7 +18,6 @@ class Main extends PureComponent {
         return (
             <Fragment>
                 <NavHeader/>
-                DOg
                 <ReduxSweetAlert/>
             </Fragment >
         )
